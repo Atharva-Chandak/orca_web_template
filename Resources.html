@@ -14,11 +14,11 @@ permalink: /Resources/
     </section>
     <section class="standard-text ">
         <div class="wrap">
-            <p>The primary resources for this course are the lecture slides, notebooks, and assignments on <a href="{{site.url}}/index.html">the front page</a>.</p>
+            <p>The primary resources for this course are the lecture slides, notebooks, and assignments on <a href="{{site.url}}/{{site.baseurl}}/index.html">the front page</a>.</p>
         </div>
         <p>
             <h2 class="standard-title" id="Assignments"><a href="#Assignments" >Assignments</a></h2>
-            <p> See <a href="{{site.url}}/Structure">Structure</a> for more information.</p>
+            <p> See <a href="{{site.url}}/{{site.baseurl}}/Structure">Structure</a> for more information.</p>
             <ul class="lists two-col animate-3" resource="homeworks">
                 {% for item in site.data.Resources.assign.assignments %}
                 <a href="../assets/assignments/{{item.link}}.pdf" target="_blank"><li>{{item.name}}</li></a>
