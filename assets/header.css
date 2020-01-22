@@ -19,7 +19,7 @@
  
 }
 
-.site-title>a, .trigger>a{
+.trigger>a{
   padding: 0.4em;
   border-radius: 5px;
   margin-right: 1em;
@@ -27,11 +27,11 @@
   color: black;
 }
 .site-title>a{
-  padding: 0.1em ;
-  }
-.site-title>a:hover{
+  padding: 0em 0.1em;
   background-color: black;
   color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
 .trigger>a:hover{
 background-color: black;

@@ -212,9 +212,10 @@ ul.lists {
   color: #333;
   cursor: pointer; }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-/* Small devices (tablets, 768px and up) */
+.icon{
+  fill: red;
+}
+
 @media (min-width: 768px) {
   .highlighted-text div.wrap {
     padding: 3em 5em;

@@ -2,58 +2,77 @@ lecture:
 - lec: 'Lecture 1: Python eat Python- Problems with Recursion or Recursion with Problems?'
   slide_link: Lec_1
   notes_link: 
+  other_links:
 - lec: 'Lecture 2: Python Dance- Python Syntax and Solving Problems'
   slide_link: Lec_2
   notes_link:  
+  other_links:
 - lec: 'Lecture 3: Do the FP Shake- Lists and Trees in Haskell'
   slide_link: Lec_3
   notes_link:  
+  other_links:
 - lec: 'Lecture 4: Python Fangs- Challenging Recursion'
   slide_link: Lec_4
   notes_link:  
+  other_links:
 - lec: 'Lecture 5: You Haskell- FP Syntax in Haskell'
   slide_link:
   notes_link:  
+  other_links:
 - lec: 'Lecture 6: Function is a function is a function- Functions in Haskell'
   slide_link:
   notes_link:  
+  other_links:
 - lec: 'Lecture 7: The Python Machine- Python generators and decorators'
   slide_link:
   notes_link:  
+  other_links:
 - lec: 'Lecture 8: Code-along for Assignment-1 (notebook)'
   slide_link:
   notes_link:  
+  other_links:
 - lec: 'Lecture 9: Bread, butter and Haskell- Map and Filter'
   slide_link:
   notes_link:  
+  other_links:
 - lec: 'Lecture 10: Folding beds and reducible tax deductions- Folds and reduce in Haskell'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 11: The calculus affair- Lambda calculus'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 12: Inherit a Haskell- Typeclass and polymorphism'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 13: Throw a Haskell- Functors and applicatives'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 14: Peanut butter and jelly- a fun day!'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 15: Save a Haskell- Context and Monads'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 16: Save the Python- Numpy and vector algebra'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 17: Think you know Haskell- Generating random structures'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 18: Think you know Python- Invariance and floyd-hoare logic'
   slide_link: 
   notes_link:  
+  other_links:
 - lec: 'Lecture 19: This feeling...'
   slide_link: 
   notes_link:  
+  other_links:
 
