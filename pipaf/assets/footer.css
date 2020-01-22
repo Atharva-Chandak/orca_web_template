@@ -1,0 +1,38 @@
+.wrap>h3{
+  font-weight: 700;
+}
+.hr{
+    border-bottom: 1px solid grey ;
+    height: 0px;
+}  
+ul{
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+footer.footer-links {
+  padding: 3vh 0; }
+  footer.footer-links h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Raleway';
+    color: #000;
+    margin-bottom: 1em; }
+    footer.footer-links h3 a {
+      color: inherit;
+      border-bottom: 1px solid transparent; }
+    footer.footer-links h3 a:hover {
+      border-bottom: 1px solid #000;
+      text-decoration: none; }
+  footer.footer-links ul li {
+    color: #AAA;
+    font-size: 1em;
+    padding: 0.25em 0; }
+    footer.footer-links ul li a {
+      border-bottom: 1px dotted #000; }
+    footer.footer-links ul li a:hover {
+      color: #000; }
+
+footer{
+  margin-bottom:0vh ;
+}

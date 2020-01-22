@@ -1,0 +1,313 @@
+* {
+  font-family: 'Work Sans';
+  text-align: justify;}
+
+.index-page>h1{
+  font-size: 3em;
+}
+hr{
+  border-bottom: 1px solid  rgba(22, 20, 20, 0.74)  ;
+}
+a{
+  cursor:pointer;
+}
+h1, h2,h3{
+  font-family: 'Raleway';
+  font-weight: 600;
+}
+h1{
+  letter-spacing: 1.5px;
+}
+
+ul>li{
+  margin-left: 2vw;
+}
+.page-content{
+  padding: 1em;
+}
+
+.images{
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  }
+.images>div{
+  height: 20vh;
+  width: 40vw;
+} 
+@media (min-width: 900px){
+.content{
+  margin:0vh -10vw 0vh -8vw;  
+}
+}
+@media (max-width: 899px){
+  .content{ 
+    margin: 0vh;
+    padding: 0vh 4vw;
+  }
+  }
+.wrap-container {
+  text-align: center; }
+
+.wrap {
+  max-width: 60em;
+  width: 100%;
+  text-align: left;
+  display: inline-block; }
+
+.wrapimgleft {
+  height: 100%;
+  }
+
+.wrapimgright {
+  height: 100%;
+  }
+label{
+  display: flex;
+}
+li{
+  text-align: left;
+}
+.animate-3 {
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  transition: 0.3s ease; }
+
+.animate-5 {
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease; }
+
+.draft {
+  color: red; }
+
+ol{
+  list-style-type: none;
+}
+
+.page-head {
+  margin: 0; }
+  .page-head p {
+    margin-bottom: 0; }
+  .page-head .head-subtitle {
+    font-family: 'Work Sans';
+    font-size: 1.2em; }
+  .page-head .head-title {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 2.5em;
+    padding: 0;
+    margin: 0.25em 0; }
+  .page-head .head-people {
+    margin: 2em 0; }
+
+div.person {
+  padding: 0;
+  float: left; }
+  div.person .person-info, div.person .person-thumbnail, div.person .person-text {
+    float: left; }
+  div.person .person-thumbnail {
+    width: 8em; }
+    div.person .person-thumbnail .person-avatar {
+      overflow: hidden;
+      border-radius: 50%;
+      height: 6em;
+      width: 6em;
+      margin: 0em 2em 1em 0; }
+    div.person .person-thumbnail .person-image {
+      height: 100%;
+      width: 100%;
+      display: inline-block; 
+    }
+  div.person .person-name {
+    font-size: 1.5em;
+    font-family: 'Raleway';
+    color: #888;
+    font-weight: 300;
+    margin-bottom: 0.25em; }
+    div.person .person-name span {
+      color: #000; }
+    div.person .person-name a {
+      border-bottom: 1px dotted #000;
+      color: #000;
+      font-weight: inherit; }
+    div.person .person-name a:hover {
+      border-bottom: 1px solid #000;
+      text-decoration: none; }
+  div.person .person-text {
+    width: calc(100% - 9em); }
+    div.person .person-text p {
+      color: #888;
+      font-size: 1.1em;
+      margin: 0.1em 0; 
+      padding-top: 1vh;}
+      div.person .person-text p span {
+        color: #000; }
+
+.row {
+  width: 100%; }
+.standard-text {
+  margin: 0; }
+  .standard-text .standard-title {
+    padding-top: 0.25em;
+    font-weight: 100;
+    font-family: 'Raleway';
+    font-size: 2em;
+    margin: 0.1em 0 0.25em 0;
+    width: 100%; }
+    .standard-text .standard-title a {
+      color: #000; 
+      font-weight: 100;
+    }
+    .standard-text .standard-title a:hover {
+      text-decoration: none; }
+  .standard-text .standard-title + p {
+    margin-bottom: 2em; }
+  .standard-text h3 {
+    font-family: 'Raleway';
+    font-weight: 300; }
+  .standard-text .standard-title + p, .standard-text .copy p {
+    font-size: 1.1em;
+    line-height: 150%; }
+  .standard-text blockquote {
+    font-size: 1em; }
+  .standard-text .extra p {
+    margin: 0;
+    color: #999; }
+    .standard-text .extra p span {
+      color: #666; }
+
+.staff-page .standard-title {
+  float: left; }
+
+ul.lists {
+  padding: 0;
+  overflow: hidden; }
+  ul.lists li {
+    color: #000;
+    padding: 0.2em 0;
+    font-size: 1.1em;
+    list-style: none;
+    margin: 0; }
+    ul.lists li a {
+      color: inherit;
+      border-bottom: 1px dotted #000; }
+    ul.lists li a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #000;
+     }
+  ul.lists li.inactive {
+    color: #ccc; }
+
+    
+.trigger {
+  width: 100%;
+  padding: 1em 2em;
+  color: #666;
+  text-transform: uppercase;
+  text-align: center; }
+
+.trigger:hover {
+  color: #333;
+  cursor: pointer; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .highlighted-text div.wrap {
+    padding: 3em 5em;
+    width: 80%; } }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .lists.two-col {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
+
+
+    aside.drawer {
+      overflow: scroll;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 100;
+      padding: 5em;
+      box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.3); }
+      aside.drawer h3 {
+        font-size: 2em;
+        font-weight: 300;
+        font-family: 'Raleway';
+        color: #000;
+        margin-bottom: 1.5em; }
+        aside.drawer h3 a {
+          color: inherit;
+          border-bottom: 1px dotted #000; }
+        aside.drawer h3 a:hover {
+          border-bottom: 1px solid #000;
+          text-decoration: none; }
+      aside.drawer ul li {
+        color: #888;
+        font-size: 1.1em;
+        padding: 0.5em 0; }
+        aside.drawer ul li a {
+          border-bottom: 1px dotted #888; }
+        aside.drawer ul li a:hover {
+          color: #000; }
+    
+    aside.drawer.active {
+      top: 0;
+      margin-top: 0; }
+    
+    .x-container {
+      height: 5em;
+      z-index: 150; }
+    
+    .x {
+      float: left;
+      clear: both;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 5em;
+      height: 5em;
+      margin-bottom: 0em;
+      cursor: pointer; }
+      .x .bar {
+        height: 2px;
+        width: 5em;
+        background-color: #000;
+        display: inline-block; }
+      .x .outer.bar {
+        margin-top: 2.5em; }
+      .x .inner.bar {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg); }
+    
+    .x:hover {
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      transform: rotate(225deg); }
+    
+    .notification {
+      color: #fff;
+      background-color: #7d9abc;
+      width: 100%;
+      text-align: center;
+      padding: 2em 3em; }
+      .notification p {
+        margin: 0; }
+      .notification a {
+        color: inherit;
+        border-bottom: 1px dotted #FFF; }
+      .notification a:hover {
+        border-bottom: 1px solid #FFF;
+        text-decoration: none; }
+   
+        
