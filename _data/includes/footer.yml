@@ -1,0 +1,46 @@
+footer_content: 
+  - tabname: "Home"
+    link: # 
+    subtopic: 
+    - subtab: "Course Description"  #headings
+      sub_link: "/#Course Description"
+    - subtab: "Instructors"
+      sub_link: "/#Instructors"
+    - subtab: "FAQs"
+      sub_link: "/#FAQs"   
+
+  - tabname: "Schedule"
+    link: "Calendar" 
+    subtopic:
+    - subtab: "Schedule"
+      sub_link: "Calendar#Schedule"
+    - subtab: "Class and Time"
+      sub_link: "Calendar#Class Time & Location"
+
+  - tabname: "Syllabus"
+    link: "syllabus"
+    subtopic:
+    - subtab: "Technology"
+      sub_link: "syllabus#Technology" 
+    - subtab: "Materials"
+      sub_link: "syllabus#Materials" 
+    - subtab: "Late Policy"
+      sub_link: "syllabus#Late Policy"  
+    - subtab: "Grading Policy"
+      sub_link: "syllabus#Grading Policy"
+
+
+  - tabname: "Resources"
+    link: "Resources"
+    subtopic:
+    - subtab: "Assignments"
+      sub_link: "Resources#Assignments"  
+    - subtab: "Lecture Slides"
+      sub_link: "Resources#Lecture Slides"  
+    - subtab: "Online Resources"
+      sub_link: "Resources#Online Resources"  
+    - subtab: "Misc Links"
+      sub_link: "Resources#Misc Links" 
+
+#You can cutomize this as you want. You can add/remove tabs , but in the same format used.   
+    

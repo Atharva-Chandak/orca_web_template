@@ -1,10 +1,12 @@
 * {
   font-family: 'Work Sans';
-  text-align: justify;}
+  text-align: justify;
+}
 
 .index-page>h1{
   font-size: 3em;
 }
+
 hr{
   border-bottom: 1px solid  rgba(22, 20, 20, 0.74)  ;
 }
@@ -21,6 +23,7 @@ h1{
 
 ul>li{
   margin-left: 2vw;
+  list-style-type: square;
 }
 .page-content{
   padding: 1em;
@@ -46,6 +49,10 @@ ul>li{
     margin: 0vh;
     padding: 0vh 4vw;
   }
+  }
+
+  #FAQs{
+    height: 10vh;
   }
 .wrap-container {
   text-align: center; }
@@ -86,21 +93,25 @@ ol{
   list-style-type: none;
 }
 
+#profs{
+  display: flex;
+  flex-direction: column;
+}
 .page-head {
   margin: 0; }
-  .page-head p {
-    margin-bottom: 0; }
-  .page-head .head-subtitle {
-    font-family: 'Work Sans';
-    font-size: 1.2em; }
-  .page-head .head-title {
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 2.5em;
-    padding: 0;
-    margin: 0.25em 0; }
-  .page-head .head-people {
-    margin: 2em 0; }
+.page-head p {
+  margin-bottom: 0; }
+.page-head .head-subtitle {
+  font-family: 'Work Sans';
+  font-size: 1.2em; }
+.page-head .head-title {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0.25em 0; }
+.page-head .head-people {
+  margin: 2em 0; }
 
 div.person {
   padding: 0;
@@ -118,65 +129,66 @@ div.person {
     div.person .person-thumbnail .person-image {
       height: 100%;
       width: 100%;
-      display: inline-block; 
+      display: inline-block;
+      background-size:cover; 
     }
-  div.person .person-name {
-    font-size: 1.5em;
-    font-family: 'Raleway';
+div.person .person-name {
+  font-size: 1.5em;
+  font-family: 'Raleway';
+  color: #888;
+  font-weight: 300;
+  margin-bottom: 0.25em; }
+  div.person .person-name span {
+    color: #000; }
+  div.person .person-name a {
+    border-bottom: 1px dotted #000;
+    color: #000;
+    font-weight: inherit; }
+  div.person .person-name a:hover {
+    border-bottom: 1px solid #000;
+    text-decoration: none; }
+div.person .person-text {
+  width: calc(100% - 9em); }
+  div.person .person-text p {
     color: #888;
-    font-weight: 300;
-    margin-bottom: 0.25em; }
-    div.person .person-name span {
+    font-size: 1.1em;
+    margin: 0.1em 0; 
+    padding-top: 1vh;}
+    div.person .person-text p span {
       color: #000; }
-    div.person .person-name a {
-      border-bottom: 1px dotted #000;
-      color: #000;
-      font-weight: inherit; }
-    div.person .person-name a:hover {
-      border-bottom: 1px solid #000;
-      text-decoration: none; }
-  div.person .person-text {
-    width: calc(100% - 9em); }
-    div.person .person-text p {
-      color: #888;
-      font-size: 1.1em;
-      margin: 0.1em 0; 
-      padding-top: 1vh;}
-      div.person .person-text p span {
-        color: #000; }
 
 .row {
   width: 100%; }
 .standard-text {
   margin: 0; }
-  .standard-text .standard-title {
-    padding-top: 0.25em;
+.standard-text .standard-title {
+  padding-top: 0.25em;
+  font-weight: 500;
+  font-family: 'Raleway';
+  font-size: 2em;
+  margin: 0.1em 0 0.25em 0;
+  width: 100%; }
+  .standard-text .standard-title a {
+    color: #000; 
     font-weight: 100;
-    font-family: 'Raleway';
-    font-size: 2em;
-    margin: 0.1em 0 0.25em 0;
-    width: 100%; }
-    .standard-text .standard-title a {
-      color: #000; 
-      font-weight: 100;
-    }
-    .standard-text .standard-title a:hover {
-      text-decoration: none; }
-  .standard-text .standard-title + p {
-    margin-bottom: 2em; }
-  .standard-text h3 {
-    font-family: 'Raleway';
-    font-weight: 300; }
-  .standard-text .standard-title + p, .standard-text .copy p {
-    font-size: 1.1em;
-    line-height: 150%; }
-  .standard-text blockquote {
-    font-size: 1em; }
-  .standard-text .extra p {
-    margin: 0;
-    color: #999; }
-    .standard-text .extra p span {
-      color: #666; }
+  }
+.standard-text .standard-title a:hover {
+    text-decoration: none; }
+.standard-text .standard-title + p {
+  margin-bottom: 2em; }
+.standard-text h3 {
+  font-family: 'Raleway';
+  font-weight: 300; }
+.standard-text .standard-title + p, .standard-text .copy p {
+  font-size: 1.1em;
+  line-height: 150%; }
+.standard-text blockquote {
+  font-size: 1em; }
+.standard-text .extra p {
+  margin: 0;
+  color: #999; }
+  .standard-text .extra p span {
+    color: #666; }
 
 .staff-page .standard-title {
   float: left; }
@@ -210,7 +222,7 @@ ul.lists {
 
 .trigger:hover {
   color: #333;
-  cursor: pointer; }
+ }
 
 .icon{
   fill: red;
@@ -269,46 +281,52 @@ ul.lists {
       height: 5em;
       z-index: 150; }
     
-    .x {
-      float: left;
-      clear: both;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      transform: rotate(45deg);
-      width: 5em;
-      height: 5em;
-      margin-bottom: 0em;
-      cursor: pointer; }
-      .x .bar {
-        height: 2px;
-        width: 5em;
-        background-color: #000;
-        display: inline-block; }
-      .x .outer.bar {
-        margin-top: 2.5em; }
-      .x .inner.bar {
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        transform: rotate(90deg); }
     
-    .x:hover {
-      -webkit-transform: rotate(225deg);
-      -moz-transform: rotate(225deg);
-      transform: rotate(225deg); }
-    
-    .notification {
-      color: #fff;
-      background-color: #7d9abc;
-      width: 100%;
-      text-align: center;
-      padding: 2em 3em; }
-      .notification p {
-        margin: 0; }
-      .notification a {
-        color: inherit;
-        border-bottom: 1px dotted #FFF; }
-      .notification a:hover {
-        border-bottom: 1px solid #FFF;
-        text-decoration: none; }
+.x {
+  float: right;
+  clear: both;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.x:before, .x:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.x:before {
+  transform: rotate(45deg);
+}
+.x:after {
+  transform: rotate(-45deg);
+}
+        
+.x:hover {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg); 
+  cursor: pointer;
+}
+
+.notification {
+  color: #fff;
+  background-color: #7d9abc;
+  width: 100%;
+  text-align: center;
+  padding: 2em 3em; }
+.notification p {
+  margin: 0; }
+.notification a {
+  color: inherit;
+  border-bottom: 1px dotted #FFF; }
+.notification a:hover {
+  border-bottom: 1px solid #FFF;
+  text-decoration: none; }
    
         

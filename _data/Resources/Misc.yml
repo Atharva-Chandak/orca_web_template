@@ -1,3 +1,5 @@
 misc:
-  - topic: Invent with python
-    link: https://inventwithpython.com/
+  - topic: Link 1
+    link: http://example.com/res1/path
+  - topic: Link 2
+    link: http://example.com/res2/path  

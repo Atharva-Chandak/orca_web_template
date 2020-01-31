@@ -2,44 +2,18 @@
 <!DOCTYPE html>
 <html>
 <hr>
-<footer class="footer-links wrap-container" style="padding-left:10vw ;">
+<footer class="footer-links wrap-container" id="footer" style="padding-left:10vw ;">
     <div class="wrap">
+        {% for tab in site.data.includes.footer.footer_content %}
         <div class="col col-md-3">
-            <h3><a href="{{site.url}}/{{site.baseurl}}/">Home</a></h3>
+        <h3><a href="{{site.url}}/{{site.baseurl}}/{{tab.link}}" style="margin-right: 0;">{{tab.tabname}}</a></h3>
             <ul class="lists">
-                <li><a href="{{site.url}}/{{site.baseurl}}/#Course">Course Description</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/#Instructors">Instructors</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/#FAQs">FAQs</a></li>
+              {% for child in tab.subtopic %}
+                <li><a href="{{site.url}}/{{site.baseurl}}/{{child.sub_link}}" >{{child.subtab}}</a></li>
+              {% endfor %}
             </ul>
         </div>
-        <div class="col col-md-3">
-            <h3><a href="{{site.url}}/{{site.baseurl}}/Calendar/">Calendar</a></h3>
-            <ul class="lists">
-                <li><a href="{{site.url}}/{{site.baseurl}}/Calendar#Calendar">Calendar</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Calendar#Time">Class Time and Location</a></li>
-            </ul>
-        </div>
-   
-        <div class="col col-md-3">
-            <h3><a href="{{site.url}}/{{site.baseurl}}/Structure">Structure</a></h3>
-            <ul class="lists" >
-                <li><a href="{{site.url}}/{{site.baseurl}}/Structure#technology">Technology</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Structure#materials">Materials</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Structure#collaboration">Collaboration</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Structure#late">Late Policy</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Structure#grading">Grading</a></li>
-            </ul>
-        </div>
-        <div class="col col-md-3">
-            <h3><a href="{{site.url}}/{{site.baseurl}}/Resources">Resources</a></h3>
-            <ul class="lists">
-                <li><a href="{{site.url}}/{{site.baseurl}}/Resources#Assignments">Assignments</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Resources#Slides">Lecture Slides</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Resources#online">Online Resources</a></li>
-                <li><a href="{{site.url}}/{{site.baseurl}}/Resources#misclinks">Misc Links</a></li>
-            </ul>
-        </div>
-        
+        {% endfor %}
   </div>
 </footer>
 <hr>

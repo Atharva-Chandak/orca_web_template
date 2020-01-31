@@ -7,62 +7,72 @@ permalink: /Resources/
     <section class="page-head ">
         <div class="wrap">
             <div class="head-decor">
-              <p class="head-subtitle">CSD 42 at BITS Pilani</p>
-              <h1 class="head-title">Resources</h1>
+                <h1 class="head-title">Resources</h1>
             </div>
         </div>
     </section>
+    <hr><br>
     <section class="standard-text ">
         <div class="wrap">
-            <p>The primary resources for this course are the lecture slides, notebooks, and assignments on <a href="{{site.url}}/{{site.baseurl}}/index.html">the front page</a>.</p>
+            <p>The primary resources for this course are the lecture slides, notebooks, and assignments shared below.</p>
         </div>
-        <p>
-            <h2 class="standard-title" id="Assignments"><a href="#Assignments" >Assignments</a></h2>
-            <p> See <a href="{{site.url}}/{{site.baseurl}}/Structure">Structure</a> for more information.</p>
+        <div class="wrap">
+            <h2 class="standard-title" id="Assignments">Assignments</h2>
+                <p> See <a href="{{site.url}}/{{site.baseurl}}/syllabus">Syllabus</a> for more information.</p>
             <ul class="lists two-col animate-3" resource="homeworks">
-                {% for item in site.data.Resources.assign.assignments %}
-                <a href="../assets/assignments/{{item.link}}.pdf" target="_blank"><li>{{item.name}}</li></a>
+                {% for item in site.data.resources.assign.assignments %}
+                {% if item.link ==  %}
+                <li>{{item.name}}</li>
+                {% else %}
+                <li><a href="../assets/assignments/{{item.link}}" target="_blank">{{item.name}}</a></li>
+                {%endif%}
                 {% endfor %}
             </ul>
-        </p>
-        <br><hr><br>
-        <p>
-            <h2 class="standard-title" id="Slides"><a href="#Slides" >Lecture Slides</a></h2>
-            <p> See <a href="{{site.Structure.path}}">Structure</a> for more information.</p>
-                <ul >
-                    {% for item in site.data.Resources.lectures.lecture %}
-                    <li>{{item.lec}}<br>
-                        {% if item.slide_link ==  %}
-                        [Slides] 
-                        {% else %}
-                        <a href="../assets/slides/{{item.slide_link}}.pdf" target="_blank">[Slides]</a>
-                        {% endif %}
-                        {% if item.notes_link ==  %}
-                        [Notes]
-                        {% else %}
-                        <a href="../assets/notes/{{item.notes_link}}.pdf" target="_blank">[Notes]</a>
-                        {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </p>
+        </div>
         <br><hr><br>
         <div class="wrap">
-            <h2 class="standard-title" id="online"><a href="#online" >Online Resources</a></h2>
+            <h2 class="standard-title" id="Lecture Slides">Lecture Slides</h2>
+            <p> See <a href="{{site.url}}/{{site.baseurl}}/syllabus">Syllabus</a> for more information.</p>
+                <ul>
+                    {% for item in site.data.resources.lectures.lecture %}
+                    <li style="list-style-type: none;">{{item.lec}}<br>
+                        {% if item.slide_link ==  %}
+                            [Slides] 
+                        {% else %}
+                            <a href="../assets/slides/{{item.slide_link}}" target="_blank">[Slides]</a>
+                        {% endif %}
+
+                        {% if item.notes_link !=  %}
+                            <a href="../assets/notes/{{item.notes_link}}" target="_blank">[Notes]</a>
+                        {% endif %}
+                        
+                        {% if item.other_links !=  %}
+                            <a href="{{item.other_links}}" target="_blank">[Other Links]</a>
+                        {% endif %}
+                    </li>
+                    <br>
+                    {% endfor %}
+                </ul>
+        </div>
+        <br><hr><br>
+        <div class="wrap">
+            <h2 class="standard-title" id="Online Resources">Online Resources</h2>
             <ul style="list-style-type:square;">
-                {% for item in site.data.Resources.online.resource %}
+                {% for item in site.data.resources.online.resource %}
                 <li><a href="{{item.link}}" target="_blank">{{item.topic}}</a></li>
                 {% endfor %}
             </ul>
         </div>
         <br><hr><br>
         <div class="wrap">
-            <h2 class="standard-title" id="misclinks"><a href="#misclinks" >Misc Links</a></h2>
+            <h2 class="standard-title" id="Misc Links">Misc Links</h2>
             <ul style="list-style-type:square;">
-                {% for item in site.data.Resources.Misc.misc %}
+                {% for item in site.data.resources.Misc.misc %}
                 <li><a href="{{item.link}}" target="_blank">{{item.topic}}</a></li>
                 {% endfor %}
             </ul>    
         </div>
-    </section>    
+        <hr><br>
+    </section> 
+
 </main>

@@ -1,86 +1,57 @@
 ---
 layout: home
 ---
-
 <body>
     <div class='content' style="text-align: justify;">
-    CSD 42 at BITS Pilani
-    <h1 id="main-title" style="font-weight: 800; font-size: 3em;">Programming:<br> Python And Functional</h1>
-    <br>
-    
-    <br>
-    <h1 id="Course">Course Description</h1>
-    <p>
-        Python is one of the most popular programming langauges of the 21st century. It used for developing desktop applications, websites, and web applications. It is also
-        <b>the</b> language to learn for becoming a data scientist.
-        Functional programming (FP) is a way of thinking about software construction that
-        emphasizes functional purity and immutability.
-        Due to the ease of testing, verification and debugging of functional
-        code, the use of functional programming is continuously on the rise in the industry.
-        According to <a href="https://insights.stackoverflow.com/survey/2019#top-paying-technologies" target="_blank">Stack
-        OverFlow Developer Survey 2019</a>, two of highest paying programming languages
-        enforce the functional approach.
-    </p>
-    <p>
-        The goal of this course is to teach programming in Python (3.8) and the functional
-        programming (FP) design methodology, with a focus on hands-on learning and industry
-        relevance.
-    </p>
-    <p>
-        Information about the content, teaching, and evaluation of the course is available at the syllabus page. The course is <b>not</b> being offered as an online course, and the notebooks, assignments, lecture slides and other resources are provided only for your personal reference and entertainment purposes. They are not (as of Jan 2020) part of course requirement for any degree-bearing university program. If you wish to include parts of the course or assignments in your curriculum, please contact the instructors, and we'd be glad to help you out.
-    </p>
-    <hr>
-    <br>
-    <h1 class="standard-title" >For Students</h1>
-        <p>We're sorry, but we won't be able to record or stream the lectures, so try not to miss too many. That said, if you do miss any lecture, contact the instructors and they'll help you catch up in no time. Slack will remain the preferred platform to communicate with the instructors as well as your classmates for all doubts and informal clarifications, while all official notices and content will be shared on the course website as well as emailed to all students. If you face any issues with either of them, contact the instructors.</p>
-    <hr>
-    <br><br>
-    <h1 class="standard-title" id="Instructors">Instructors</h1>
-    <br>
-    <div class="person col-md-12 col-sm-24 col-xs-24" style="margin-left:2vw">
-        <div class="person-thumbnail" style="margin-left:1vw">
-            <div class="person-avatar">
-                <span class="person-image" style="background: url('https://miro.medium.com/fit/c/256/256/1*tfFlBa3dUfCrraU-Hyp8zA.jpeg'); background-size:cover;"></span>
-            </div>
-        </div>
-        <div class="person-text">
-            <h2 class="person-name">Instructor<a href="https://github.com/twitu"> Ishan Bhanuka</a></h2>
-        <p><span>f2016075@pilani.bits-pilani.ac.in</span></p>
-        <p>Consultation Hours: Wed 6.30-7.30pm, Budh Redi</p>
-        </div>
-    <br><br><br><br><br><br>
-    <div class="head-people" style="margin-left:-1vw">
-        <ul>
+        The <em>Awesome</em> course
+        <h1 id="main-title" style="font-weight: 800; font-size: 3em;">{{site.title}}</h1>
+        <br>
+        <h1 id="Course Description">Course Description</h1>
+        {% for para in site.data.home.course.paras %}
+
+            {{para.p}}    
+
+        {% endfor %}
+        <br><hr><br>
+        <h1 class="standard-title" id="Instructors">Instructors</h1>
+        <br>
+        <ul class=lists>
             <li>
-                <div class="person col-md-12 col-sm-24 col-xs-24">
-                    <div class="person-thumbnail">
+                <div class="person col-md-12 col-sm-24 col-xs-24" id="profs">
+                {% for item in site.data.home.instructors.instructor %}
+                <div>
+                    <div class="person-thumbnail" style="margin-left:1vw">
                         <div class="person-avatar">
-                            <span class="person-image"
-                                style="background: url('https://avatars3.githubusercontent.com/u/31892335?s=460&v=4'); background-size:cover;"></span>
+                            <span class="person-image" style="background: url({{item.img}}); "></span>
                         </div>
                     </div>
                     <div class="person-text">
-                        <h2 class="person-name">Instructor
-                            <a href="https://github.com/twitu">Satvik Golechha</a>
-                        </h2>
-                        <p><span>f20170117@pilani.bits-pilani.ac.in</span></p>
-                        <p>Consultation Hours: Fri 6.30-7.30pm, VK Redi</p>
+                        <h2 class="person-name">Instructor<a href="{{item.github}}" target="_blank"> {{item.name}} </a></h2>
+                    <p><span>{{item.email}}</span></p>
+                    <p>Consultation Hours: {{item.consultation}} </p>
                     </div>
+                </div>
+                <hr style="margin: 3vh 15vw 5vh 0vw; border-style:dashed ;"> 
+                {% endfor %}
                 </div>
             </li>
         </ul>
-        </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><br>
+        <h1 class="standard-title" id="FAQs">FAQs</h1>
+            {% for item in site.data.home.FAQs.FAQ %}
+            <ul class= lists style="font-size:1.2em">
+                <li style="font-weight: 500;"> {{item.question}}</li>
+                <li style="color: rgb(120,120,120); margin-left: 1vw;"> - {{item.answer}}</li>
+            </ul> 
+            {% endfor %}
 
-    <h1 class="standard-title" id="FAQs">FAQs</h1>
-    <ul style="font-size:1.2em">
-        {% for item in site.data.Home.FAQs.FAQ %}
+        
+        <!--
+        <hr><br>
+        <h1 class="standard-title" >HEADING</h1>
         <br>
-        <li style="font-weight: 500; margin-left: -0.25vw;"> {{item.question}}</li>
-        <li style="color: rgb(120,120,120);"> - {{item.answer}}</li>
-        <br>
-        {% endfor %}
-    </ul> 
+        <p>
+            ADD EXTRA CONENT(IF ANY) HERE AND REMOVE THE COMMENT
+        </p>
+        -->
     </div>
 </body>

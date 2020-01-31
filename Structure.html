@@ -1,100 +1,25 @@
 ---
 layout: home
-permalink: /Structure/
+permalink: /syllabus/
 ---
-<!--Course Structure -->
+<!--Course syllabus -->
  <main class="index-page" style="list-style-type:square; ">
     <section class="page-head ">
         <div class="wrap">
             <div class="head-decor">
-                <p class="head-subtitle">CSD 42 at BITS Pilani</p>
-                <h1 class="head-title">Structure</h1>
+                <h1 class="head-title">Syllabus</h1>
             </div>
         </div>
     </section>
-    <section class="standard-text " >
+    {% for item in site.data.syllabus.syllabus.syllabus %}
+       <hr><br>  
+        <section class="standard-text " >    
         <div class="wrap" >
-            <h2 class="standard-title" id="technology" ><a href="#technology" >Technology</a></h2>
-            <div class="copy">
-                <p>
-                    <a href="https://bitsacm.slack.com" target="_blank">Slack</a> will be used for announcements, general questions
-                    and discussions, clarifications about assignments, student questions to each other, and so on.
-                    If you are a BITS Pilani student enrolled in the course, and haven't already been added to
-                    Slack, please contact the instructors. If you're outside BITS Pilani, we're sorry we won't be
-                    able to accomodate you currently. 
-                </p>
-            </div>
-        </div>
-    </section>
-        <br><hr><br>
-    <section class="standard-text ">
-        <div class="wrap">
-            <h2 class="standard-title" id="materials"><a href="#materials">Materials</a></h2>
-            <p style="margin-bottom:2vh;">There will be no need to purchase any books/software. All resources would be open, check references
-                below for some details. Some excerpts (which we will provide during the course) will be taken from:
-                <li>Learn Python 3 The Hard Way by Zed Shaw</li>
-                <li>Thinking Functionally with Haskell by Richard S. Bird</li>
-            </p>
-            <br>
-            <h3>Homeworks</h3>
-            <div class="copy">
-                There will be very short homeworks after some lectures. You will not be graded on
-                them, and you can find them at the end of the respective lecture slides. 
-            </div>
-            <br>    
-            <h3>Slides</h3>
-            <div class="copy">
-                We will post slides on the course website after each lecture.
-            </div>
-            <br>
-            <h3>Videos</h3>
-            <div class="copy">
-                Sorry, we will be unable to provide video recordings of the lectures.
-            </div>
-        </div>
-    </section>
-        <br><hr><br>
-    <section class="standard-text ">
-        <div class="wrap">
-            <h2 class="standard-title" id="collaboration">
-                <a href="#collaboration">Collaboration</a></h2>
-            <div class="copy">
-                <p>
-                    All homeworks should be done individually.
-                </p>
-                <p>
-                    For the assignments, we will share the collaboration policy with the respective problem
-                    statements.
-                </p>
-            </div>
-        </div>
-    </section>
-    <br><hr><br>
-    <section class="standard-text ">
-        <div class="wrap">
-            <h2 class="standard-title" id="late">
-                <a href="#late">Late Policy</a>
-            </h2>
-            <div class="copy">
-                All assignments must be turned in on time. We will allow a total of four late days
-                cumulatively. We will not make any additional allowances for late assignments: the late days are
-                intended to provide for exceptional circumstances, and students should avoid using them unless
-                absolutely necessary. Any assignments that are submitted late (with insufficient late days
-                remaining) will not be graded.
-            </div>
-        </div>
-    </section>
-    <br><hr><br>
-    <section class="standard-text ">
-        <div class="wrap">
-            <h2 class="standard-title" id="grading">
-                <a href="#grading">Grading</a>
-            </h2>
-            <div class="copy" >
-                <li>Assignments: 50% (25% each)</li>
-                <li>Final Exams: 50% (20% + 30%)</li>
-            </div>
-        </div>
-    </section>
-    <br>    
+            <h2 class="standard-title" id="{{item.heading}}" >{{item.heading}}</a></h2>
+            <div class="copy">{{item.content}}</div>
+        </div>  
+        </section>
+        <br>
+    {% endfor %}
+    <hr><br>    
 </main>
