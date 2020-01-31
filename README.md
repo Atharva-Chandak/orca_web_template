@@ -7,7 +7,7 @@ Steps :
 2] Add any data files(Lecture slides, notes, assignments ) in the respective directories in 'assets' directory. If images are needed, add them directly to assets directory. 
 Resources must be explicitly named with complete file extensions(.pdf, etc).
 
-3] Set up header & footer: In the '_data' folder, go to the 'includes' subfolder's 'header.yml' file and make the tabs you want in the existing format.
+3] Set up header & footer: In the '_data' folder, go to the 'includes' subfolder's 'header.yml' file and make the tabs you want in the existing format. Similarly customize your footer as per your wish.
 
 4] Now, write the required contents in all of the files of '_data' directory. Do not change the keys/file names. If you have to change the keys, make changes in all the files/locations(.html files) where it is being used/mentioned directly as a key.
 Use basic html tags such as 'p', 'br','a', etc explicitly to the .yml files for their corresponing roles.<br>
@@ -22,8 +22,7 @@ Ensure there is a 'space' character before writing in-front of keys of .yml file
 Its Done! Your website is now live at the link: {url}/{baseurl}/ 
 
 P.S.
-Pages: You can add extra pages with required frontmatter(a sample is created, see extra.html). Remember to add 'layout:home' in any new page.
-To make anything new, carefully use the same format as used above/in the document.
+To create anything new, carefully use the same format as used above/in the document.
 While creating new headings/ sub-headings, all 'id' attributes should have values same as heading itself.
 
 
