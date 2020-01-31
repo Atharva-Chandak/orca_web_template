@@ -1,21 +1,26 @@
 lecture:
 - lec: 'Lecture 1: Topic Name1' #edit Topic Name
   slide_link: Lec_1.pdf
-  notes_link: Lec_1.pdf
+  notes_link: Notes_1.pdf
   other_links: https://github.com/
 
 - lec: 'Lecture 2: Topic Name2'
   slide_link: Lec_2.pdf
-  notes_link: Lec2.pdf 
+  notes_link: Notes_2.pdf 
   other_links: 
 
 - lec: 'Lecture 3: Topic Name3'
   slide_link: Lec_3.pdf
   notes_link: 
-  other_links:
+  other_links:  
   
-#- lec: 'Lecture 4: Topic Name4'
-#  slide_link: Lec_4.pdf
+- lec: 'Lecture 4: Topic Name4'
+  slide_link: Lec_4.pdf
+  notes_link:  
+  other_links:
+
+#- lec: 'Lecture 5: Topic Name5'
+#  slide_link: Lec_5.pdf
 #  notes_link:  
 #  other_links:
 

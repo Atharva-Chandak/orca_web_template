@@ -8,11 +8,11 @@ Resources must be explicitly named with complete file extensions(.pdf, etc).
 
 3] Set up header & footer: In the '_data' folder, go to the 'includes' subfolder's 'header.yml' file and make the tabs you want in the existing format.
 
-4] Now, write the required contents in all of the files of '_data' directory. Do not change the keys. If you have to change the keys, make changes in all the files/locations where it is being used.
-Use basic html tags such as '<p>', '<br>','<a>', etc explicitly to the .yml files for their corresponing roles.
+4] Now, write the required contents in all of the files of '_data' directory. Do not change the keys. If you have to change the keys, make changes in all the files/locations(.html files) where it is being used.
+Use basic html tags such as 'p', 'br','a', etc explicitly to the .yml files for their corresponing roles.
 *N.B.*:
 "Do  not use double quotes(" ") in .YML files". Apostrophes & single inverted commas are fine. If you have to use double quotes, read the method of escape characters from [here][jekyll-qoutes]
-Ensure 'space' before writing in-front of .yml files
+Ensure there is a 'space' character before writing in-front of keys of .yml files
 
 5] In the config.yml file, write the course tite(which also appears on homepage). Fill in the url as your website's url. If you are using github to host your website, then baseurl is the name of your repository. Else, it is the subpath(if any) of your website.
 
