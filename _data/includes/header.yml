@@ -11,10 +11,10 @@ navbar:
 
 
   - tabname: SCHEDULE
-    link: Calendar 
+    link: schedule 
     subtopic:
      - subtab: Class and Time
-       sub_link: Calendar#Class Time & Location  
+       sub_link: schedule#Class Time & Location  
 
   - tabname: SYLLABUS
     link: syllabus

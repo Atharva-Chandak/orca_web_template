@@ -10,12 +10,12 @@ footer_content:
       sub_link: "/#FAQs"   
 
   - tabname: "Schedule"
-    link: "Calendar" 
+    link: "schedule" 
     subtopic:
     - subtab: "Schedule"
-      sub_link: "Calendar#Schedule"
+      sub_link: "schedule#Schedule"
     - subtab: "Class and Time"
-      sub_link: "Calendar#Class Time & Location"
+      sub_link: "schedule#Class Time & Location"
 
   - tabname: "Syllabus"
     link: "syllabus"

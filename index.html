@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: /
 ---
 <body>
     <div class='content' style="text-align: justify;">
@@ -7,7 +8,7 @@ layout: home
         <h1 id="main-title" style="font-weight: 800; font-size: 3em;">{{site.title}}</h1>
         <br>
         <h1 id="Course Description">Course Description</h1>
-        {% for para in site.data.home.course.paras %}
+        {% for para in site.data.home.course.content %}
 
             {{para.p}}    
 
@@ -47,7 +48,7 @@ layout: home
         
         <!--
         <hr><br>
-        <h1 class="standard-title" >HEADING</h1>
+        <h1 class="standard-title" >   HEADING   </h1>
         <br>
         <p>
             ADD EXTRA CONENT(IF ANY) HERE AND REMOVE THE COMMENT
