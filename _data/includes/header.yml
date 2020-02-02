@@ -1,6 +1,6 @@
 navbar: 
   - tabname: HOME
-    link: # 
+    link:  
     subtopic: 
     - subtab: Course Description
       sub_link: /#Course Description
@@ -30,13 +30,13 @@ navbar:
 
 
   - tabname: RESOURCES
-    link: Resources
+    link: resources
     subtopic:
     - subtab: Assignments
-      sub_link: Resources#Assignments  
+      sub_link: resources#Assignments  
     - subtab: Lecture Slides
-      sub_link: Resources#Lecture Slides  
+      sub_link: resources#Lecture Slides  
     - subtab: Online Resources
-      sub_link: Resources#Online Resources  
+      sub_link: resources#Online Resources  
     - subtab: Misc Links
-      sub_link: Resources#Misc Links 
+      sub_link: resources#Misc Links 

@@ -1,3 +1,5 @@
+#You can cutomize this as you want. You can add/remove tabs , but in the same format used.   
+    
 footer_content: 
   - tabname: "Home"
     link: # 
@@ -31,16 +33,13 @@ footer_content:
 
 
   - tabname: "Resources"
-    link: "Resources"
+    link: "resources"
     subtopic:
     - subtab: "Assignments"
-      sub_link: "Resources#Assignments"  
+      sub_link: "resources#Assignments"  
     - subtab: "Lecture Slides"
-      sub_link: "Resources#Lecture Slides"  
+      sub_link: "resources#Lecture Slides"  
     - subtab: "Online Resources"
-      sub_link: "Resources#Online Resources"  
+      sub_link: "resources#Online Resources"  
     - subtab: "Misc Links"
-      sub_link: "Resources#Misc Links" 
-
-#You can cutomize this as you want. You can add/remove tabs , but in the same format used.   
-    
+      sub_link: "resources#Misc Links" 
