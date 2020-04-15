@@ -21,10 +21,10 @@ permalink: /resources/
                 <p> See <a href="{{site.url}}/{{site.baseurl}}/syllabus">Syllabus</a> for more information.</p>
             <ul class="lists two-col animate-3" resource="homeworks">
                 {% for item in site.data.resources.assign.assignments %}
-                {% if item.link ==  %}
+                {% if item.link =='' %}
                 <li>{{item.name}}</li>
                 {% else %}
-                <li><a href="../assets/assignments/{{item.link}}" target="_blank">{{item.name}}</a></li>
+                <li><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
                 {%endif%}
                 {% endfor %}
             </ul>
