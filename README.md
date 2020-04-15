@@ -18,7 +18,7 @@ If you want some inspiration, checkout [pipaf website][pipaf]
  ### 1. Using the template 
  Click on the 'Use this template' button above & fill in the repository details. Once the repository is created, clone it.  
 
- ### 2. Adding assets**
+ ### 2. Adding assets
  Add any data files(Lecture slides, notes, assignments ) in the respective subdirectories in `assets` directory. If images are needed, add them directly to assets directory. 
  Resources must be explicitly named with complete file extensions(.pdf, etc).
 Note: Please avoid changing directory structure of the root.
@@ -38,13 +38,14 @@ Note: Please avoid changing directory structure of the root.
 
  ### 6. Configure the `config.yml` file
  Fill in the details of `config.yml`. (If you are using github pages to host your website, baseurl is the name of your repository).
-
-
-And, its done! Your awesome course website is ready! If you want help in deploying, [click here][deploy].
-
+<hr>
+<p>
+And, its done! Your awesome course website is ready! 
+</p>
 P.S.
 * To create anything new, carefully use the same format as used in the same file.
 * While creating new headings/ sub-headings, all `id` attributes should have values same as heading itself, so as to automatically render it.
+* If you want assistance in deploying, [click here][deploy].
 
 ## Contributions:
 Any constructive feedback or contributions are welcome & highly appreciated.
