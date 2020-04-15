@@ -43,6 +43,7 @@ Note: Please avoid changing directory structure of the root.
 And, its done! Your awesome course website is ready! 
 </p>
 P.S.
+
 * To create anything new, carefully use the same format as used in the same file.
 * While creating new headings/ sub-headings, all `id` attributes should have values same as heading itself, so as to automatically render it.
 * If you want assistance in deploying, [click here][deploy].
