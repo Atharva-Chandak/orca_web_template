@@ -1,32 +1,40 @@
 # Orca
 A jekyll template for easy creation of course websites! Check out the template [here][website] 
+<br>
 ![alt text](assets/orca.jpg)
+
+
+Why should I use it?
+
+1. Simple and Responsive.
+2. Easy to create
+
 
 6 Quick steps :
 
-1. Fork this repository. 
+1. **Using the template**: Click on the 'Use this template' button above & fill in the repository details. Once the repository is created, clone it.  
 
-2. Add any data files(Lecture slides, notes, assignments ) in the respective directories in 'assets' directory. If images are needed, add them directly to assets directory. 
+2. **Adding assets**: Add any data files(Lecture slides, notes, assignments ) in the respective subdirectories in `assets` directory. If images are needed, add them directly to assets directory. 
 Resources must be explicitly named with complete file extensions(.pdf, etc).
-Note: Please do not change directory structure of the root.
+Note: Please avoid changing directory structure of the root.
 
-3. Set up header & footer: In the '_data' folder, go to the 'includes' subfolder's 'header.yml' file and make the tabs you want in the existing format. Similarly customize your footer as per your wish.
+3. **Set up header & footer**: In the `_data` directory, go to the 'includes' subdirectory's `header.yml` file and make the tabs you want (in existing format). Similarly customize the footer as per your wish.
 
-4. Now, write the required contents in all of the files of '_data' directory. Do not change the keys/file names. If you have to change the keys, make changes in all the files/locations(.html files) where it is being used/mentioned directly as a key.
-Use basic html tags such as 'p', 'br','a', etc explicitly to the .yml files for their corresponing roles.<br>
-*N.B.*:
-"Do  not use double quotes(" ") in .YML files". Apostrophes & single inverted commas are fine. If you have to use double quotes, read the method of escape characters from [here][jekyll-qoutes]
-Ensure there is a 'space' character before writing in-front of keys of .yml files
+4. **Adding data in `.yml` files**: In the other `.yml` files of subdirectories of `_data` directory, fill out the required details. Avoid changing the keys/file names. If you have to change the keys, make the changes in all the files(.HTML files) where it is being used as a key.
+Use basic HTML tags such as `<p>`, `<br>`,`<a>`, etc. explicitly while writing HTML code in the `.yml` files for their corresponing roles in HTML files.<br>
+**N.B.** : <br>
+* Avoid using double quotes(" ") in `.yml` files. Apostrophes & single inverted commas are fine. If you have to use double quotes, read the method of escape characters from [here][jekyll-qoutes]
+* Ensure there is a 'space' character while writing in front of keys of `.yml` files and **indent** (note!) your code as per the format followed in the file.
 
-5. You can create new pages to your website by simply creating 'title.html' files and adding the front-matter as shown in example of "extra.html" file. Do not forget to write the front-matter as the webpage will not render properly without it.
+5. **Creating new pages**: You can create new pages to your website by simply creating `your_title.html` (in root directory itself) and simply adding the front-matter, as shown in `extra.html` file. Do not forget to write the front-matter as the webpage will not render properly without it.
 
-6. In the config.yml file, write the course tite(which also appears on homepage). Fill in the url as your website's url. If you are using github to host your website, then baseurl is the name of your repository. Else, it is the subpath(if any) of your website.
+6. **Configure the `config.yml` file**: Fill in the details of `config.yml`. (If you are using github pages to host your website, baseurl is the name of your repository).
 
 Its Done! Your website is now live at the link: {url}/{baseurl}/ 
 
 P.S.
-To create anything new, carefully use the same format as used above in the same document.
-While creating new headings/ sub-headings, all 'id' attributes should have values same as heading itself, so as to automatically render it.
+* To create anything new, carefully use the same format as used in the same file.
+* While creating new headings/ sub-headings, all 'id' attributes should have values same as heading itself, so as to automatically render it.
 
 [jekyll-qoutes]: https://talk.jekyllrb.com/t/how-to-use-single-quote-and-double-quote-as-part-of-title-without-escaping/2705
 [website]: https://atharva-chandak.github.io/orca_web_template/
