@@ -6,10 +6,10 @@ A jekyll template for easy creation of course websites! Check out the template [
 
 Why should I use it?
 
-1. Simple, elegant and responsive.
-2. Easy to create and you get your website in no time, that too completely free!
-3. Highly flexible.
-4. No need to code the messy HTML pages. Just make a few changes in user-friendly syntax, and you'll be good to go.
+* Simple, elegant and responsive design, perfect for your course website.
+* Easy to create and you get your website in no time, that too completely free!
+* Highly flexible.
+* No need to code the messy HTML pages. Just make a few changes in user-friendly syntax, and you'll be good to go.
 
 If u want some inspiration, checkout [pipaf website][pipaf]
 
