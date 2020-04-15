@@ -3,10 +3,10 @@ lecture:
     resources:
       - resource:
           type: 'Slides'
-          link: '../assets/slides/slides1.pptx'
+          link: '../assets/slides/orca.pptx'
       - resource:
           type: 'Notes'
-          link: '../assets/notes/notes1.pdf'
+          link: '../assets/notes/orca.pdf'
       - resource:
           type: 'Extra Reading'
           link: '#'
@@ -14,7 +14,7 @@ lecture:
     resources:
       - resource:
           type: 'Notes'
-          link: '../assets/slides/notes2.pdf'
+          link: '../assets/notes/orca.pdf'
   - lec: 'Lecture 3: Topic Name3'
     resources:
       - resource:
