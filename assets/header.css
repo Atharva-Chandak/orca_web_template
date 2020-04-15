@@ -12,13 +12,13 @@
   .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; }
   .site-nav .page-link:not(:last-child) { margin-right: 0; } 
 }
-@media screen and (max-width: 800px) { 
-    .site-title{
-    margin:10px;
-    padding-top:0vh;
-    }
-}
 
+@media screen and (max-width: 800px) { 
+  .site-title{
+  margin:10px;
+  padding-top:0vh;
+  }
+}
 .site-header{
     width: 100%;
 }

@@ -34,23 +34,12 @@ permalink: /resources/
             <h2 class="standard-title" id="Lecture Slides">Lecture Slides</h2>
             <p> See <a href="{{site.url}}/{{site.baseurl}}/syllabus">Syllabus</a> for more information.</p>
                 <ul>
-                    {% for item in site.data.resources.lectures.lecture %}
-                    <li style="list-style-type: none;">{{item.lec}}<br>
-                        {% if item.slide_link ==  %}
-                            [Slides] 
-                        {% else %}
-                            <a href="../assets/slides/{{item.slide_link}}" target="_blank">[Slides]</a>
-                        {% endif %}
-
-                        {% if item.notes_link !=  %}
-                            <a href="../assets/notes/{{item.notes_link}}" target="_blank">[Notes]</a>
-                        {% endif %}
-                        
-                        {% if item.other_links !=  %}
-                            <a href="{{item.other_links}}" target="_blank">[Other Links]</a>
-                        {% endif %}
+                    {% for item in site.data.Resources.lectures.lecture %}
+                    <li>{{item.lec}}<br>
+                        {% for element in item.resources %}
+                            <a href="{{element.resource.link}}" target="_blank">[{{element.resource.type}}]</a>
+                        {% endfor %}
                     </li>
-                    <br>
                     {% endfor %}
                 </ul>
         </div>
