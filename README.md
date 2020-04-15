@@ -1,11 +1,14 @@
-# A jekyll template for easy creation of course websites
+# Orca
+A jekyll template for easy creation of course websites! Check out the template [here][website] 
+![alt text](assets/orca.jpg)
 
-Steps :
+6 Quick steps :
 
 1. Fork this repository. 
 
 2. Add any data files(Lecture slides, notes, assignments ) in the respective directories in 'assets' directory. If images are needed, add them directly to assets directory. 
 Resources must be explicitly named with complete file extensions(.pdf, etc).
+Note: Please do not change directory structure of the root.
 
 3. Set up header & footer: In the '_data' folder, go to the 'includes' subfolder's 'header.yml' file and make the tabs you want in the existing format. Similarly customize your footer as per your wish.
 
@@ -22,8 +25,8 @@ Ensure there is a 'space' character before writing in-front of keys of .yml file
 Its Done! Your website is now live at the link: {url}/{baseurl}/ 
 
 P.S.
-To create anything new, carefully use the same format as used above/in the document.
-While creating new headings/ sub-headings, all 'id' attributes should have values same as heading itself.
-
+To create anything new, carefully use the same format as used above in the same document.
+While creating new headings/ sub-headings, all 'id' attributes should have values same as heading itself, so as to automatically render it.
 
 [jekyll-qoutes]: https://talk.jekyllrb.com/t/how-to-use-single-quote-and-double-quote-as-part-of-title-without-escaping/2705
+[website]: https://atharva-chandak.github.io/orca_web_template/
