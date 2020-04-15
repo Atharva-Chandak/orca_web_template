@@ -11,10 +11,10 @@ Why should I use it?
 * Highly flexible.
 * No need to code the messy HTML pages. Just make a few changes in user-friendly syntax, and you'll be good to go.
 
-If u want some inspiration, checkout [pipaf website][pipaf]
+If you want some inspiration, checkout [pipaf website][pipaf]
 
-# 6 Quick steps :
-<br>
+## 6 Quick steps :
+
 1. **Using the template**: Click on the 'Use this template' button above & fill in the repository details. Once the repository is created, clone it.  
 
 2. **Adding assets**: Add any data files(Lecture slides, notes, assignments ) in the respective subdirectories in `assets` directory. If images are needed, add them directly to assets directory. 
@@ -24,7 +24,7 @@ Note: Please avoid changing directory structure of the root.
 3. **Set up header & footer**: In the `_data` directory, go to the `includes` subdirectory's `header.yml` file and make the tabs you want (in existing format). Similarly customize the footer as per your wish.
 
 4. **Adding data in `.yml` files**: In the other `.yml` files of subdirectories of `_data` directory, fill out the required details. Avoid changing the keys/file names. If you have to change the keys, make the changes in all the files(.HTML files) where it is being used as a key.
-Use basic HTML tags such as `<p>`, `<br>`,`<a>`, etc. explicitly while writing HTML code in the `.yml` files for their corresponing roles in HTML files.<br>
+Use basic HTML tags such as `<p>`, `<br>`,`<a>`, etc. explicitly while writing HTML code in the `.yml` files for their corresponing roles in HTML files.
 **N.B.** :
 * Avoid using double quotes(" ") in `.yml` files. Apostrophes & single inverted commas are fine. If you have to use double quotes, read the method of escape characters from [here][jekyll-qoutes]
 * Ensure there is a 'space' character while writing in front of keys of `.yml` files and **indent** (note!) your code as per the format followed in the file.
@@ -34,7 +34,7 @@ Use basic HTML tags such as `<p>`, `<br>`,`<a>`, etc. explicitly while writing H
 6. **Configure the `config.yml` file**: Fill in the details of `config.yml`. (If you are using github pages to host your website, baseurl is the name of your repository).
 
 
-And, its done! 
+And, its done! Your awesome course website is ready! If you want help in deploying, click [here][deploy].
 
 P.S.
 * To create anything new, carefully use the same format as used in the same file.
@@ -45,4 +45,6 @@ Any constructive feedback or contributions are welcome.
 
 [jekyll-qoutes]: https://talk.jekyllrb.com/t/how-to-use-single-quote-and-double-quote-as-part-of-title-without-escaping/2705
 [website]: https://atharva-chandak.github.io/orca_web_template/
+
 [pipaf]: https://p-paf.github.io/
+[deploy]: https://jekyllrb.com/docs/deployment/third-party/
