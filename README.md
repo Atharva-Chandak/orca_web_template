@@ -4,7 +4,7 @@ A jekyll template for easy creation of course websites! Check out the template [
 ![alt text](assets/orca.jpg)
 
 
-Why should I use it?
+### Why should I use it?
 
 * Simple, elegant and responsive design, perfect for your course website.
 * Easy to create and you get your website in no time, that too completely free!
@@ -16,7 +16,7 @@ If you want some inspiration, checkout [pipaf website][pipaf]
 ## 6 Quick steps :
 
  ### 1. Using the template 
- Click on the 'Use this template' button above & fill in the repository details. Once the repository is created, clone it.  
+ Click on the 'Use this template' button above & fill in the repository details. Once the repository is created, clone it & make the changes below to this cloned repository.  
 
  ### 2. Adding assets
  Add any data files(Lecture slides, notes, assignments ) in the respective subdirectories in `assets` directory. If images are needed, add them directly to assets directory. 
