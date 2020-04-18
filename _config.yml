@@ -1,6 +1,7 @@
 title: COURSE TITLE # title which appears for the website
 email: #your-email@example.com
-description: >- # short discription of your website
+description: > # short discription of your website. It is helpful for making your website more discoverable and appears while previewing your website.
+    A jekyll template for creating course websites.
  
 baseurl: "orca_web_template"   # specify the subpath of your site
 url: "https://atharva-chandak.github.io" # the base hostname & protocol for YOUR site, e.g. http://example.com
