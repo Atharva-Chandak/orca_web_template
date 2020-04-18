@@ -1,5 +1,5 @@
 # Orca
-A jekyll template for easy creation of course websites! No need to code the messy HTML pages. Just make a few changes in user-friendly syntax, and you'll be good to go.
+A jekyll template for easy creation of course websites. No need to code the messy HTML pages. Just make a few changes in user-friendly syntax, and you'll be good to go!
 <br><br>
 ![alt text](assets/orca.jpg)
 
