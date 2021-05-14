@@ -11,7 +11,9 @@ A jekyll template for easy creation of course websites. No need to code the mess
 
 ## Template used in:
 Checkout:
-* [pipaf website][pipaf]
+* [Functional programming (pipaf) website][pipaf]
+* [Software Engineering course website][software]
+* [Data Structures & Algorithms course website][DSA]
 
 ## Quick Setup
 For a guide to install Jekyll and build locally, refer [here][jekyll_doc]. Note that this is an optional step, required only if you want to locally build the website. You can actually build and host the website directly on GitHub pages.
@@ -56,6 +58,8 @@ Any constructive feedback or contributions are welcome & highly appreciated.
 
 [jekyll-qoutes]: https://talk.jekyllrb.com/t/how-to-use-single-quote-and-double-quote-as-part-of-title-without-escaping/2705
 [website]: https://atharva-chandak.github.io/orca_web_template/
-[pipaf]: https://p-paf.github.io/
 [deploy]: https://jekyllrb.com/docs/deployment/third-party/
 [jekyll_doc]: https://jekyllrb.com/docs/
+[pipaf]: https://p-paf.github.io/
+[software]: https://sagarmittal1.github.io/3-SE/
+[DSA]: https://sagarmittal1.github.io/3-DSA/
