@@ -11,7 +11,8 @@ A jekyll template for easy creation of course websites. No need to code the mess
 
 ## Template used in:
 Checkout:
-* [Functional Programming with Python at BITS Pilani][pipaf]
+* [Functional Programming with Python at BITS Pilani, Pilani Campus][pipaf]
+* [Natural Language Processing at BITS Pilani, Goa Campus][bpgc-csf429]
 * [Software Engineering course website at GIT Jaipur][software]
 * [Data Structures & Algorithms at GIT Jaipur][DSA]
 * [Computational Biology at Tufts University][CompBio]
@@ -62,6 +63,7 @@ Any constructive feedback or contributions are welcome & highly appreciated.
 [deploy]: https://jekyllrb.com/docs/deployment/third-party/
 [jekyll_doc]: https://jekyllrb.com/docs/
 [pipaf]: https://p-paf.github.io/
+[bpgc-csf429]: https://bpgc-csf429.github.io/
 [software]: https://sagarmittal1.github.io/3-SE/
 [DSA]: https://sagarmittal1.github.io/3-DSA/
 [CompBio]: https://uricchio.github.io/CompBio/
